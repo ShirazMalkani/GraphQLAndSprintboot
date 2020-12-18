@@ -1,0 +1,30 @@
+schema {
+    query: Query
+#    mutation: Mutation
+}
+
+type Query {
+    account(account_number: String): Account
+    allAccounts: [Account]
+}
+
+type Account {
+    id: String
+    account_number: String
+    balance: Int
+    firstname: String
+    lastname: String
+    age: Int
+    gender: String
+    address: String
+    employer: String
+    email: String
+    city: String
+    state: String
+}
+#
+#type Mutation {
+#    newAccount(account_number: String!, balance: Int, firstName: String!, lastName: String!, age: Int, gender: String, address: String!, employer: String, email: String!, city: String, state: String) : Account!
+##    deleteAccount(account_number: String!): Boolean!
+##    updateAccount(account_number: String!): Account!
+#}
